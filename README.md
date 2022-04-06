@@ -23,10 +23,10 @@ PRINT "Enter an ammount of dollars"
 
 AMMOUT <-- GET
 
-BTCVAL <-- 30000
+BTCVAL <-- 0.000033
 
 CONVERSION<-- AMMOUNT * BTCVAL
 
-PRINT CONVERSION
+PRINT "ammount is equal to $" CONVERSION
 
 END 
