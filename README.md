@@ -20,8 +20,13 @@ Therefore it can be said that Java is both interpreted and compiled
 START
 
 PRINT "Enter an ammount of dollars"
+
 AMMOUT <-- GET
+
 BTCVAL <-- 30000
+
 CONVERSION<-- AMMOUNT * BTCVAL
+
 PRINT CONVERSION
+
 END 
