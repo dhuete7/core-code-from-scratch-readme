@@ -50,7 +50,7 @@ taking the numbers from the lowest result leaves us wi the answer of : 111110010
 5) MIPS challenge, make a program that adds 2 numbers
 
 
-    #Add two numbers 
+ #Add two numbers 
 
     .data
     numo1: .asciiz "Write your first number: "
