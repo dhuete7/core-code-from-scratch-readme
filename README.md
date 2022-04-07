@@ -30,3 +30,22 @@ CONVERSION<-- AMMOUNT * BTCVAL
 PRINT "ammount is equal to $" CONVERSION
 
 END 
+
+
+4) Translate Date of birth to binary , we divide each number by 2 and leave a remainder for each of the non divisible by 2 operations
+such as:
+for example, 1993/2 =  remainder 1
+             996 /2 =            0
+             498 /2 =            0 
+             249 /2 =            1
+             124 /2 =            0
+             62  /2 =            0
+             31  /2 =            1
+             15  /2 =            1
+             7   /2 =            1
+             3   /2 =            1
+             1   / 2=            1
+taking the numbers from the lowest result leaves us wi the answer of : 11111001001
+
+               
+
