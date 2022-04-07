@@ -49,14 +49,15 @@ taking the numbers from the lowest result leaves us wi the answer of : 111110010
 
 5) MIPS challenge, make a program that adds 2 numbers
 
-   #Add two numbers 
 
-.data
+    #Add two numbers 
+
+    .data
     numo1: .asciiz "Write your first number: "
     numo2: .asciiz "Write your second number: "
     resultado: .asciiz "the result of the sum is: "
 
-.text
+    .text
     #get first number
     la $a0, numo1
     li $v0, 4
