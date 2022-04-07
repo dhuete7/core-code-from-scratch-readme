@@ -47,5 +47,42 @@ for example, 1993/2 =  remainder 1
              1   / 2=            1
 taking the numbers from the lowest result leaves us wi the answer of : 11111001001
 
-               
+5) MIPS challenge, make a program that adds 2 numbers
+
+#Add two numbers 
+
+.data
+    numo1: .asciiz "Write your first number: "
+    numo2: .asciiz "Write your second number: "
+    resultado: .asciiz "the result of the sum is: "
+
+.text
+    #get first number
+    la $a0, numo1
+    li $v0, 4
+    syscall
+    li $v0, 5
+    syscall
+    move $t0, $v0
+
+    #get second number
+    la $a0, numo2
+    li $v0, 4
+    syscall
+    li $v0, 5
+    syscall
+    move $t1, $v0
+
+    #calculate and show a result
+    la $a0, resultado
+    li $v0, 4
+    syscall
+    add $t2, $t0, $t1
+    move $a0, $t2
+    li $v0, 1
+    syscall
+
+    #finalize program
+    li $v0, 10
+    syscall
 
