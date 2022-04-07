@@ -47,8 +47,23 @@ for example, 1993/2 =  remainder 1
              1   / 2=            1
 taking the numbers from the lowest result leaves us wi the answer of : 11111001001
 
-5) MIPS challenge, make a program that adds 2 numbers
+5) MIPS challenge, display my name and make a program that adds 2 numbers
 
+
+#Display my name 
+.data
+
+ nome: .asciiz "\nMy name is Daniel!\n"
+
+.text 
+
+ main:
+li $v0, 4  
+la $a0, nome 
+syscall 
+
+li $v0, 10 # terminate program
+syscall
 
  #Add two numbers 
 
