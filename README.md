@@ -102,3 +102,41 @@ syscall
     li $v0, 10
     syscall
 
+/// print even numbers ////
+ cont = 0
+
+while ( cont <= 99 )  {
+  cont++ 
+
+if (cont % 2 == 0 ) {
+
+  console.log(cont);
+ }
+}
+
+//////////bad code 1 fixed with correct == operator/////////
+
+var cond = false;
+
+if ((cond == true)) {
+  console.log('The cond variable is true');
+} else {
+  console.log('The cond variable is false');
+}
+
+/////////////////////
+
+
+///////Bad code 2 fixed using && operator 
+
+var n = 200;
+
+if (n == 100) {
+  console.log('This is a special number!');
+}
+else 
+if (n < 1000 && n % 10 == 0 ) {
+  console.log('this number is almost special');
+} else
+  console.log('Just a regular number');
+/////////////////////////
