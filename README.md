@@ -162,3 +162,11 @@ let zum= 0;
 return zum;
  }
 
+///return ascii codefrom character 
+function getChar(c){
+  
+
+let charz= String.fromCharCode(c) // 
+  
+  return charz
+}
