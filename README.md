@@ -140,3 +140,25 @@ if (n < 1000 && n % 10 == 0 ) {
 } else
   console.log('Just a regular number');
 /////////////////////////
+
+
+
+
+//////////////WEEK 2
+
+function uniTotal (stre) {
+  
+// total up dem unicodes!
+  
+let zum= 0;
+  
+  for ( let cont=0, charc= stre.length; cont < charc; cont++ ){ 
+
+   zum+= stre[cont].charCodeAt();
+
+
+}
+  
+return zum;
+ }
+
