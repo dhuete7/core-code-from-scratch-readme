@@ -170,3 +170,19 @@ let charz= String.fromCharCode(c) //
   
   return charz
 }
+
+
+
+///////////student final grade
+function finalGrade (exam, projects) {
+
+  if (exam > 90 || projects>10 ) {FG=100;} else
+   if (exam > 75 && projects >= 5)
+      {FG=90;} else 
+        if (exam > 50 && projects >= 2)
+      {FG=75;} else 
+      {FG=0;} 
+return FG// final grade
+}
+
+/////////////////
