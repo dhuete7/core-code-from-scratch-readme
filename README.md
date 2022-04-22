@@ -221,3 +221,16 @@ function validSpacing(string) {
 function fakeBin(numo){
   return numo.replace(/[1234]/g, '0').replace(/[56789]/g, '1')
 }
+
+///remove ! from end of string
+function remove (string) {  
+ let result = string;
+
+  while (result[result.length - 1] === "!") {
+    // remove the last character (= `!`)
+    result = result.slice(0, -1);
+  }
+
+  
+  return result;
+}
