@@ -146,6 +146,13 @@ if (n < 1000 && n % 10 == 0 ) {
 
 //////////////WEEK 2
 
+////////Multiply 
+function multiply(a, b){
+  return a * b;
+}
+
+
+
 function uniTotal (stre) {
   
 // total up dem unicodes!
