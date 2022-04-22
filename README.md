@@ -186,3 +186,12 @@ return FG// final grade
 }
 
 /////////////////
+
+///Holiday excercise 
+
+function dutyFree(normPrice, discount, hol){
+var descuento = normPrice * (discount / 100);
+  var cantBot = hol / descuento;
+  
+  return Math.floor(cantBot);
+}
