@@ -152,10 +152,10 @@ function multiply(a, b){
 }
 
 
-
+///////ASCII Total
 function uniTotal (stre) {
   
-// total up dem unicodes!
+
   
 let zum= 0;
   
@@ -168,6 +168,7 @@ let zum= 0;
   
 return zum;
  }
+
 
 ///return ascii codefrom character 
 function getChar(c){
