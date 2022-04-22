@@ -274,3 +274,16 @@ const rps = (p1, p2) => {
     return 'Player 2 won!';
   }
 };
+
+//////persistent bugger
+
+//using.split, .map and .reduce methods in JS 
+function persistence(num) {
+    var vecesMult = 0;
+    num = num.toString();
+    while (num.length > 1) {
+        vecesMult++;
+        num = num.split('').map(Number).reduce((a, b) => a * b).toString();
+    }
+    return vecesMult;
+}
