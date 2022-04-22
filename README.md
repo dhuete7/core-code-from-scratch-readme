@@ -227,7 +227,6 @@ function remove (string) {
  let result = string;
 
   while (result[result.length - 1] === "!") {
-    // remove the last character (= `!`)
     result = result.slice(0, -1);
   }
 
