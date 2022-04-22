@@ -233,3 +233,15 @@ function remove (string) {
   
   return result;
 }
+
+////shortcut 
+
+
+function shortcut (string) {
+const str = string;
+///use replace with needed set of vowels to remove and join result as cutWord
+
+const cutWord = str.replace(/[aeiou]/gi, '');  
+
+return cutWord;
+}
