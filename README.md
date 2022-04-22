@@ -203,3 +203,15 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 
  return Math.abs(dadYearsOld - 2 * sonYearsOld);
 }
+
+////valid spacing 
+function validSpacing(string) {
+ if(!string) {
+    return true
+  }
+///check if position at the startincludes a space, initial position includes a spae or otherwise for consecutive spaces  
+  if(string[0].includes(' ') || string[string.length -1].includes(' ') || string.includes('  ')) {
+   return false
+ } else {
+   return true
+ }}
