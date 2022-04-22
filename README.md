@@ -215,3 +215,9 @@ function validSpacing(string) {
  } else {
    return true
  }}
+ 
+ //Fake binary
+//using .replace to 'replace' sets below and above 5 as needed
+function fakeBin(numo){
+  return numo.replace(/[1234]/g, '0').replace(/[56789]/g, '1')
+}
