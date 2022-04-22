@@ -247,6 +247,7 @@ return cutWord;
 }
 
 /////rock, paper, scissors!
+
 const rps = (p1, p2) => {
   
    if (p1 === p2) {
