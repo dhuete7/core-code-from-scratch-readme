@@ -195,3 +195,11 @@ var descuento = normPrice * (discount / 100);
   
   return Math.floor(cantBot);
 }
+
+/////twice as old
+
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+
+
+ return Math.abs(dadYearsOld - 2 * sonYearsOld);
+}
