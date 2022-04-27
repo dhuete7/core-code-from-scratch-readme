@@ -1,1 +1,83 @@
+//////////////WEEK 2
 
+////////Multiply function multiply(a, b){ return a * b; }
+
+///////ASCII Total function uniTotal (stre) {
+
+let zum= 0;
+
+for ( let cont=0, charc= stre.length; cont < charc; cont++ ){
+
+zum+= stre[cont].charCodeAt();
+
+}
+
+return zum; }
+
+///return ascii codefrom character function getChar(c){
+
+let charz= String.fromCharCode(c) //
+
+return charz }
+
+///////////student final grade function finalGrade (exam, projects) {
+
+if (exam > 90 || projects>10 ) {FG=100;} else if (exam > 75 && projects >= 5) {FG=90;} else if (exam > 50 && projects >= 2) {FG=75;} else {FG=0;} return FG// final grade }
+
+/////////////////
+
+///Holiday excercise
+
+function dutyFree(normPrice, discount, hol){ var descuento = normPrice * (discount / 100); var cantBot = hol / descuento;
+
+return Math.floor(cantBot); }
+
+/////twice as old
+
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+
+return Math.abs(dadYearsOld - 2 * sonYearsOld); }
+
+////valid spacing function validSpacing(string) { if(!string) { return true } ///check if position at the startincludes a space, initial position includes a spae or otherwise for consecutive spaces
+if(string[0].includes(' ') || string[string.length -1].includes(' ') || string.includes(' ')) { return false } else { return true }}
+
+//Fake binary //using .replace to 'replace' sets below and above 5 as needed function fakeBin(numo){ return numo.replace(/[1234]/g, '0').replace(/[56789]/g, '1') }
+
+///remove ! from end of string function remove (string) {
+let result = string;
+
+while (result[result.length - 1] === "!") { result = result.slice(0, -1); }
+
+return result; }
+
+////shortcut
+
+function shortcut (string) { const str = string; ///use replace with needed set of vowels to remove and join result as cutWord
+
+const cutWord = str.replace(/[aeiou]/gi, '');
+
+return cutWord; }
+
+/////rock, paper, scissors!
+
+const rps = (p1, p2) => {
+
+if (p1 === p2) { return 'Draw!'; } if (p1 === 'rock' && p2 === 'scissors') {
+
+return 'Player 1 won!'; } else if (p1 === 'paper' && p2 === 'rock') {
+
+return 'Player 1 won!';
+
+} else if (p1 === 'scissors' && p2 === 'paper') {
+
+return 'Player 1 won!';
+
+} else {
+
+return 'Player 2 won!';
+
+} };
+
+//////persistent bugger
+
+//using.split, .map and .reduce methods in JS function persistence(num) { var vecesMult = 0; num = num.toString(); while (num.length > 1) { vecesMult++; num = num.split('').map(Number).reduce((a, b) => a * b).toString(); } return vecesMult; }
